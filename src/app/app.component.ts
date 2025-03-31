@@ -5,10 +5,11 @@ import { SkillsComponent } from "./skills/skills.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ResumeComponent } from "./resume/resume.component";
 import { FooterComponent } from "./footer/footer.component";
+import { ContactUsComponent } from "./contact-us/contact-us.component";
 
 @Component({
   selector: 'app-root',
-  imports: [AboutComponent, SkillsComponent, ProjectsComponent, ResumeComponent, FooterComponent],
+  imports: [AboutComponent, SkillsComponent, ResumeComponent, FooterComponent, ContactUsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -17,9 +18,9 @@ export class AppComponent {
   // Method to download the resume
   downloadResume() {
     const link = document.createElement('a');
-    link.href = 'assets/resume.pdf';  // Path to the file in the assets folder
-    link.download = 'resume.pdf';  // Corrected the filename for download
+    link.href = 'src/assets/CVv.pdf';  // Path to the file in the assets folder
+    link.download = 'CVv.pdf';  // Corrected the filename for download
     link.click();
   }
-  
+
 }
