@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.services-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #1565c0;
+}
+h1 span {
+    color: #333;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 20px;
+}
+.service-box {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.service-box:hover {
+    transform: translateY(-10px);
+}
+.service-box i {
+    font-size: 2.5em;
+    color: #ff5a5f;
+}
+.service-title {
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.service-description {
+    font-size: 1em;
+    color: #666;
+}

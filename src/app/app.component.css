@@ -1,0 +1,45 @@
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between the icons */
+}
+
+    .social-icons a {
+        color: #000;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+        .social-icons a:hover {
+            color: #0077b5; /* You can add hover effect if needed */
+        }
+
+.color-change-text {
+    font-size: 24px;
+    animation: colorChange 4s linear infinite;
+}
+
+@keyframes colorChange {
+    0%
+
+{
+    color: red;
+}
+
+25% {
+    color: blue;
+}
+
+50% {
+    color: green;
+}
+
+75% {
+    color: orange;
+}
+
+100% {
+    color: red;
+}
+
+}
